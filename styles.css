@@ -1,0 +1,105 @@
+/* Resetando o estilo padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+  background-color: #2d2b3d; /* Fundo escuro com um toque de roxo */
+  color: #f0f0f0; /* Texto claro para contraste */
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  color: #f2e1ff; /* Cor suave e feminina, um lilás claro */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Efeito de sombra suave */
+}
+
+.intro-text {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #d1d0e3; /* Cinza claro com tom suave */
+  text-align: center;
+  font-style: italic; /* Itálico para uma sensação de mistério */
+}
+
+#start-btn {
+  padding: 15px 25px;
+  font-size: 1.5em;
+  background-color: #a24bbf; /* Roxo mais forte */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+#start-btn:hover {
+  background-color: #8b3eb2; /* Roxo mais profundo ao passar o mouse */
+}
+
+#story-js {
+  margin-top: 30px;
+  display: none;
+}
+
+.story-text {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  color: #d1d0e3;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Sombra para profundidade */
+  text-align: justify;
+}
+
+#options {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  background-color: #9c47a7; /* Cor roxa escura para o botão */
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  text-align: center;
+}
+
+.option-button:hover {
+  background-color: #7f3895; /* Mais escuro quando passar o mouse */
+}
+
+#story-js h2 {
+  color: #e5c1ff; /* Roxo mais claro para o título da história */
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Sombra no título */
+}
+
+/* Efeito de transição para o container da história */
+#story-js {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#story-js.visible {
+  opacity: 1;
+}
